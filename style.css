@@ -1,0 +1,60 @@
+.container{
+     width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+.front{display: flex; background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.7-6vq710uPfZvEIFLFL8lwHaLH%3Fpid%3DApi&f=1&ipt=5f7f1df04d17e742593964f900648830820dea90f86d172db3d02e007031a574&ipo=images);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+justify-content: center;
+align-items: end;
+ position: absolute;
+
+  width: 100%;
+
+  backface-visibility: hidden;
+}
+
+.front .content{
+display: flex;
+justify-content: space-between;
+
+color: aliceblue;
+text-align: left;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 136, 255);
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.back{
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+   height: 100vh;
+    justify-content: center;
+    align-items: center;
+   position: absolute;
+     width: 100%;
+
+  backface-visibility: hidden;
+}
+.back .content1{
+    padding: 20px;
+}
+.fa-map{ padding: 20px; width: 10px; margin: auto; font-size: 70px;}
+
+.flip-card-inner{ position:relative ;
+width: 100%;
+height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;}
+  .container:hover .flip-card-inner{ transform: rotateY(180deg);}
+  .back{transform: rotateY(180deg);}
+
+.fa-circle-up{rotate: 25deg;}
